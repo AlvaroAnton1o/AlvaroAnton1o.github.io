@@ -163,6 +163,57 @@ nav ul li a:hover{
     color: #fff;
 }
 
+ /* Estilo general del selector */
+ .btn-traductor {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #000000; /* Fondo oscuro para que coincida con el tema */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #50ebff; /* Borde azul claro */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+    position: relative;
+    display: inline-block;
+    width: 100px; /* Ancho del selector */
+    cursor: pointer;
+    margin: 0 10px; /* Margen alrededor del selector */
+}
+
+/* Estilo para la flecha del selector */
+.btn-traductor::after {
+    content: '▼'; /* Caracter para la flecha */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #50ebff; /* Color de la flecha */
+    pointer-events: none;
+}
+
+/* Estilo para la lista de opciones */
+.btn-traductor option {
+    background-color: #113534; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo al pasar el cursor sobre el selector */
+.btn-traductor:hover, .btn-traductor:focus {
+    background-color: #000000; /* Fondo más claro al pasar el cursor */
+    border-color: #28ccec; /* Mantener el borde azul claro */
+}
+
+/* Estilo al seleccionar una opción */
+.btn-traductor:active {
+    background-color: #000000; /* Fondo aún más claro al seleccionar */
+} 
+        #icono-nav {
+            color: #fff;
+            display: none;
+        }
+
 
 /* SECCION SERVICIOS */
 .servicios{

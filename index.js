@@ -1,3 +1,12 @@
+function seleccionar(link) {
+    var opciones = document.querySelectorAll('#links a');
+    opciones.forEach(opcion => opcion.classList.remove('seleccionado'));
+    link.classList.add('seleccionado');
+    
+    var x = document.getElementById("nav");
+    x.className = "";
+}
+    
 const btnSkill = document.querySelector("#btn-skills");
 const btnInfo = document.querySelector("#btn-info-sobre-mi");
 let itemSkills = document.querySelectorAll('.relleno');
